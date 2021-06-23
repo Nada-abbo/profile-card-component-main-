@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh-Sans", sans-serif;
+  font-weight: 400;
+}
+
+/* :root {
+
+  --dark-cyan: #19A2AE;
+  --very-dark-blue: #2D3248;
+  --dark-grayish:#6A6F81;
+  --dark-gray: #969696;
+} */
+.container {
+  height: 100vh;
+  background-color: #19A2AE;
+  color: #2D3248;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.container .top-bg {
+  position: absolute;
+  background: url("images/bg-pattern-top.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 978px;
+  width: 978px;
+  top: -528px;
+  left: -284px;
+}
+
+.container .bottom-bg {
+  position: absolute;
+  background: url("images/bg-pattern-bottom.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 978px;
+  width: 978px;
+  bottom: -628px;
+  right: -250px;
+}
+
+.container .card {
+   background-color: white;
+   border-radius: 20px;
+   z-index: 3;
+     font-size: 18px;
+
+  /* height: 376px;
+  width: 350px;
+  display: flex;
+  font-size: 18px;
+
+
+  position: relative; */
+}
+
+
+.card .card-bg img{
+
+  border-radius: 20px 20px 0 0 ; }
+
+
+
+  .card .profile img {
+margin-top: -50px;
+    margin-left: 125px;
+    border-radius: 50%;
+    padding: 5px;
+    background: white;
+
+
+  }
+
+
+  .card .profile .bottom-name {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+font-size: 15px;
+
+
+
+  }
+
+
+.card .profile .bottom-name h2 {color: #969696;}
+  .card .profile .bottom-name span{
+color: #2D3248;
+    font-weight: 700;
+  }
+
+.card .profile .City {
+margin-bottom: 20px;
+  border-bottom: 2px solid #969696;}
+  .card .profile .City h3 {margin-left: 130px;
+  color: #969696;}
+
+  .stats {
+
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+
+.stats h4 {
+/* display: inline-block; */
+  transform: translate(0, -50%)
+  justify: center;
+}
+  .stats .span-class {
+display: block;
+  color: #969696;
+
+
+  }
+
+
+
+  @media(max-width: 375px){
+    .top-bg{
+        height: 375px;
+        width: 375px;
+        top:-160px;
+        left:-167px;
+    }
+    .bottom-bg{
+        height: 375px;
+        width: 375px;
+        bottom: -79px;
+        right: -167px;
+    }
+}
